@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Yongmeng (Celeste) Wu</title>
+    <meta name="author" content="Yongmeng Wu">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  </head>
+
+  <body>
+    <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+
+          <!-- ===================== HEADER ===================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr style="padding:0px">
+              <td style="padding:2.5%;width:63%;vertical-align:middle">
+                <p class="name" style="text-align: center;">
+                  Yongmeng (Celeste) Wu
+                </p>
+                <p>
+                  I'm a senior undergraduate majoring in Engineering Mechanics at
+                  <a href="https://www.tongji.edu.cn/">Tongji University</a>, in the Top-notch Student Training Base in Mechanics.
+                  I'm currently a research intern in the <a href="https://intelliphysics.engineering.jhu.edu/">Centrum IntelliPhysics Lab</a> at
+                  <a href="https://www.jhu.edu/">Johns Hopkins University</a>, advised by
+                  <a href="https://engineering.jhu.edu/faculty/somdatta-goswami/">Prof. Somdatta Goswami</a>.
+                </p>
+                <p>
+                  My research interests lie in the intersection of <strong>scientific computing</strong> and <strong>scientific machine learning</strong> (SciML).
+                </p>
+                <p>
+                  I'm applying to PhD programs starting in Fall 2027.
+                </p>
+                <p style="text-align:center">
+                  <a href="mailto:yongmeng.celeste.wu@gmail.com">Email</a> &nbsp;/&nbsp;
+                  <a href="data/Yongmeng_Wu_CV.pdf">CV</a> &nbsp;/&nbsp;
+                  <a href="https://github.com/YongmengWu">GitHub</a> &nbsp;/&nbsp;
+                  <a href="https://orcid.org/0009-0007-3457-7915">ORCID</a>
+                </p>
+              </td>
+              <td style="padding:2.5%;width:37%;max-width:37%">
+                <img style="width:100%;max-width:100%;object-fit: cover; border-radius: 50%;" alt="profile photo" src="images/profile.jpg">
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ===================== NEWS ===================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>News</h2>
+                <ul>
+                  <li><strong>Aug 2026</strong> &nbsp; Started a collaboration with Prof. Satyajit Mojumder (Washington State University) on neural operators for multiscale problems.</li>
+                  <li><strong>Jul 2026</strong> &nbsp; Arrived in U.S. to work as an intern in the Centrum IntelliPhysics Lab at Johns Hopkins University.
+                  <br>
+                  <img src="images/jhu.jpg" alt="Scenery at Johns Hopkins University" style="width:40%; margin-top:8px; border-radius:6px;">
+                  </li>
+                  <li><strong>May 2026</strong> &nbsp; Gave an oral presentation in English on DFEM at the &lsquo;101 Project&rsquo; Undergraduate Forum in Mechanics in Hangzhou, representing Tongji University.
+                  <br>
+                  <img src="images/hangzhou_101.jpg" alt="Oral presentation in English at the 101 Project Forum" style="width:40%; margin-top:8px; border-radius:6px;">
+                  </li>
+                  <li><strong>Apr 2026</strong> &nbsp; Began research with Prof. Somdatta Goswami's group at Johns Hopkins University.</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ===================== RESEARCH STATEMENT ===================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Research</h2>
+                <p>
+                  I build <strong>hybrid solvers</strong> that combine classical <strong>numerical methods</strong> with <strong>machine learning</strong>.
+                </p>
+                <p>
+                  A question keeps coming up in my work: when a learned model sits inside a numerical solver, whether as a
+                  subdomain in domain decomposition or as the constitutive law at every integration point of a multiscale
+                  simulation, sometimes it is not enough to just guarantee the accuracy of its values; its <em>derivatives</em> matter as well.
+                </p>
+                <p>
+                  I'm interested in making such solvers reliable, scalable and differentiable, with applications to composite materials.
+                </p>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ===================== PROJECTS ===================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Projects</h2>
+                <ul class="projects">
+
+                  <li>
+                    <span class="papertitle">Coupling Finite Elements and Neural Operators via Domain Decomposition</span>
+                    <br>
+                    <em>Ongoing, unpublished</em> &nbsp;|&nbsp; Johns Hopkins University &nbsp;|&nbsp; Apr 2026 &ndash; present
+                    <img src="images/fe_no.png" style="display:block;width:80%;margin:12px auto 0;border-radius:6px;" alt="FE-NO coupling">
+                    <p>
+                      A GPU-resident JAX solver that couples finite element and neural operator (Transolver) subdomains through
+                      non-overlapping Neumann&ndash;Dirichlet domain decomposition, scaled from 2D cylinder to a fiber composite with 100 learned subdomains and a J2-plastic bolted joint.
+                    </p>
+                  </li>
+
+                  <li>
+                    <span class="papertitle">Multiscale Modeling of Fiber Composites with Neural Operator RVE Surrogates</span>
+                    <br>
+                    <em>Ongoing, unpublished</em> &nbsp;|&nbsp; collaborating with Prof. Satyajit Mojumder (WSU) &nbsp;|&nbsp; Aug 2026 &ndash; present
+                    <img src="images/multiscale.png" style="display:block;width:80%;margin:12px auto 0;border-radius:6px;" alt="RVE microstructure">
+                    <p>
+                      Replacing the RVE solve at every macroscale integration point of FE&sup2; with a neural operator that takes
+                      realistic microstructures (fiber clustering, voids) and returns homogenized stress, with consistent tangents
+                      from automatic differentiation inside a differentiable JAX finite element solver.
+                    </p>
+                  </li>
+
+                  <li>
+                    <span class="papertitle">Enhancing Deep Finite Element Method (DFEM) for Heterogeneous Heat Transfer via Exact Boundary Constraints and Gradient Supervision</span>
+                    <br>
+                    <strong>Yongmeng Wu</strong>
+                    <br>
+                    <em>Manuscript in revision</em> &nbsp;|&nbsp; oral presentation in English at &lsquo;101 Project&rsquo; Undergraduate Forum in Mechanics, 2026
+                    <br>
+                    <!-- TODO: add arXiv / code links once public -->
+                    <img src="images/dfem.png" style="display:block;width:80%;margin:12px auto 0;border-radius:6px;" alt="DFEM heat transfer">
+                    <p>
+                      Hard Dirichlet constraints via distance functions, Fourier features and gradient supervision at material
+                      interfaces give relative L<sub>2</sub> errors below 0.1% on 2D benchmarks and about 0.3% on a 3D woven
+                      composite; parametric warm-starting is about 10&times; faster than conventional FEM.
+                    </p>
+                  </li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+
+          <!-- ===================== AWARDS ===================== -->
+          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+              <td style="padding:16px;width:100%;vertical-align:middle">
+                <h2>Awards</h2>
+                <ul>
+                  <li><strong>First Prize (Individual &amp; Team)</strong> &nbsp;|&nbsp; 6th International Engineering Mechanics Contest (Asian Region) &nbsp;|&nbsp; Dec 2025</li>
+                  <li><strong>Second Prize</strong> &nbsp;|&nbsp; 15th National Zhou Peiyuan Mechanics Competition &nbsp;|&nbsp; July 2025</li>
+                  <li><strong>First Prize</strong> &nbsp;|&nbsp; 16th Chinese Mathematics Competition for College Students &nbsp;|&nbsp; Dec 2024</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody></table>
+
+        </td>
+      </tr>
+    </tbody></table>
+  </body>
+</html>
