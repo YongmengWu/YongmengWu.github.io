@@ -52,6 +52,10 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>News</h2>
                 <ul>
+                  <li><strong>Oct 2026</strong> &nbsp; Presented a poster, <em>Plug-in Neural Subdomains: FE&ndash;NO Coupling in 3D</em>, at the IDIES Annual Symposium 2026 at Johns Hopkins University.
+                  <br>
+                  <img src="images/2026IDIES.jpg" alt="Presenting the poster at the IDIES Annual Symposium 2026" style="width:40%; margin-top:8px; border-radius:6px;">
+                  </li>
                   <li><strong>Aug 2026</strong> &nbsp; Started a collaboration with Prof. Satyajit Mojumder (Washington State University) on neural operators for multiscale problems.</li>
                   <li><strong>Jul 2026</strong> &nbsp; Arrived in U.S. to work as an intern in the Centrum IntelliPhysics Lab at Johns Hopkins University.
                   <br>
@@ -100,8 +104,9 @@
                     <em>Ongoing, unpublished</em> &nbsp;|&nbsp; Johns Hopkins University &nbsp;|&nbsp; Apr 2026 &ndash; present
                     <img src="images/fe_no.png" style="display:block;width:80%;margin:12px auto 0;border-radius:6px;" alt="FE-NO coupling">
                     <p>
-                      A GPU-resident JAX solver that couples finite element and neural operator (Transolver) subdomains through
-                      non-overlapping Neumann&ndash;Dirichlet domain decomposition, scaled from 2D cylinder to a fiber composite with 100 learned subdomains and a J2-plastic bolted joint.
+                      A GPU-accelerated JAX solver that couples finite element and neural operator (Transolver) subdomains through
+                      non-overlapping Neumann&ndash;Dirichlet domain decomposition, with constant, Aitken and IQN-ILS (Anderson-type) interface accelerators,
+                      scaled from a 2D cylinder to a 3D fiber composite with 100 learned subdomains and a J2-plastic bolted joint under cyclic loading.
                     </p>
                   </li>
 
@@ -112,7 +117,7 @@
                     <img src="images/multiscale.png" style="display:block;width:80%;margin:12px auto 0;border-radius:6px;" alt="RVE microstructure">
                     <p>
                       Replacing the RVE solve at every macroscale integration point of FE&sup2; with a neural operator that takes
-                      realistic microstructures (fiber clustering, voids) and returns homogenized stress, with consistent tangents
+                      realistic microstructures (e.g. fiber clustering and resin-rich regions) and returns homogenized stress, with consistent tangents
                       from automatic differentiation inside a differentiable JAX finite element solver.
                     </p>
                   </li>

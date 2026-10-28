@@ -1,0 +1,8 @@
+# Office temporary lock files (e.g. ~$ngmeng_Wu_CV.docx)
+~$*
+
+# Figure scripts (kept local, not published)
+code/
+
+# Poster PDF: not published until the poster is corrected
+data/IDIES2026_poster_Yongmeng.pdf
